@@ -1,0 +1,36 @@
+import java.nio.file.Files
+import java.nio.file.StandardCopyOption
+
+plugins {
+    id 'java'
+}
+
+group 'com.github.imajindevon'
+version '0.1.0'
+
+task copyScripture {
+    final File resourceFile = file('src/main/resources/Scripture.md')
+    resourceFile.createNewFile()
+
+    Files.copy(
+            file('../Scripture.md').toPath(),
+            resourceFile.toPath(),
+            StandardCopyOption.REPLACE_EXISTING
+    )
+}
+
+tasks.getByName('jar').mustRunAfter(copyScripture)
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.jetbrains:annotations:23.0.0'
+    /*testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'*/
+}
+
+/*test {
+    useJUnitPlatform()
+}*/

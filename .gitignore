@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+*.iml
+
+**/target/
+**/__pycache__/
+**/build/
+
+**/.gradle/
+
+**/Cargo.lock
