@@ -28,8 +28,7 @@ public final class SusTaskJv {
         while (i < input.length() && ((c = input.charAt(i)) == '#' || c == ' ')) {
             i += 1;
         }
-        System.out.println(input.substring(i));
-        return input;
+        return input.substring(i);
     }
 
     /**
