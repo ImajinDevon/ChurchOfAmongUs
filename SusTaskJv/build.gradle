@@ -8,6 +8,12 @@ plugins {
 group 'com.github.imajindevon'
 version '0.1.0'
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.github.imajindevon.sustaskjv.SusTaskJv'
+    }
+}
+
 task copyScripture {
     final File resourceFile = file('src/main/resources/Scripture.md')
     resourceFile.createNewFile()
