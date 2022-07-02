@@ -18,5 +18,5 @@ A group that a Crewmate chooses/as a member, shall fall under [0.2](#02)
 ## 0.4
 Interacting with that/they of Sus is considered high treason.
 
-## 0.4
+## 0.5
 Thou shall do 🙏when someone does 🙏 and thou shall do 🙏 when someone posts a pic/gif/video of HOLY AMOGUS
